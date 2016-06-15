@@ -1,0 +1,30 @@
+parser: csv
+defaults:
+  provider: ransomware.abuse.ch
+  tlp: green
+  altid_tlp: white
+  confidence: 95
+  tags:  
+    - ransomware
+    - TeslaCrypt
+    - CryptoWall
+    - TorrentLocker
+    - PadCrypt
+    - Locky
+    - CTB-Locker
+    - FAKBEN
+    - PayCryp
+feeds:
+  ransomware_domains:
+    remote: http://ransomwaretracker.abuse.ch/feeds/csv
+    values:
+      - null
+      - null
+      - description
+      - null
+      - observable
+      - null
+      - null
+      - null
+      - null
+      - null
